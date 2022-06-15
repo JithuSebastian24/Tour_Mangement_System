@@ -1,0 +1,534 @@
+{% load static %} 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Feel the Moment</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}">
+    <!-- Custom Font Icons-->
+    <link rel="stylesheet" href="{% static 'css/fontastic.css' %}">
+    <!-- owl carousel-->
+    <link rel="stylesheet" href="{% static 'vendor/owl.carousel/assets/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'vendor/owl.carousel/assets/owl.theme.default.css' %}">
+    <!-- air datepicker-->
+    <link rel="stylesheet" href="{% static 'vendor/air-datepicker/css/datepicker.min.css' %}">
+    <!-- lightbox-->
+    <link rel="stylesheet" href="{% static 'vendor/lightbox2/css/lightbox.min.css' %}">
+    <!-- timepicki-->
+    <link rel="stylesheet" href="{% static 'vendor/timepicki/css/timepicki.css' %}">
+    <!-- Slider-->
+    <link rel="stylesheet" href="{% static 'css/slider.min.css' %}">
+    <!-- google font - dancing script for headings | pt sans for copy-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|PT+Serif:400,400i,700">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="{% static 'css/style.default.css' %}" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="{% static 'img/logo2.png' %}">
+    <!-- Favicon-->
+    <script src="{% static 'js/modernizr.custom.79639.min.js' %}"></script>
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="page-holder">
+      <!-- navbar-->
+      <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+          <div class="container"><a href="#" class="navbar-brand"> <img src="{% static 'img/logo2.png' %}" alt="Italiano" width="100"></a>
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">Menu<i class="fa fa-align-justify"></i></button>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a href="#hero" class="nav-link link-scroll">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link link-scroll">About</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link link-scroll">Services</a></li>
+                <li class="nav-item"><a href="#dishes" class="nav-link link-scroll">Trips</a></li>
+                <li class="nav-item"><a href="#menu" class="nav-link link-scroll">Packages</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link link-scroll">Gallery</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link link-scroll">Contact </a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- End Navbar-->
+    </div>
+    <!-- Hero Section-->
+    <section id="hero" class="hero">
+      <div id="slider" class="sl-slider-wrapper">
+        <div class="sl-slider">
+          <!-- slide-->
+          <div data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2" class="sl-slide bg-1">
+            <div style="background-image: url( {% static 'img/main-bg1.jpg' %} );" class="sl-slide-inner">
+              <div class="container">
+                <h2>Make memories with <span class="text-primary">Magic Moments</span></h2>
+                <h1>TRAVEL IN SICILY</h1>
+                <p>ADVENTURE WHERE YOU LEAST EXPECT IT
+                  <!-- <a href="https://bootstraptemple.com/" target="_blank">Bootstrap Temple</a> -->
+                  .</p>
+              </div>
+            </div>
+          </div>
+          <!-- slide-->
+          <div data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5" class="sl-slide bg-2">
+            <div style="background-image: url({% static 'img/main-bg2.jpg' %} );" class="sl-slide-inner">
+              <div class="container">
+                <h1 id="slide-h1">You don’t have to be rich to travel well</h1>
+                <p>Your dream destination with your budget we make it possible </p>
+              </div>
+            </div>
+          </div>
+          <!-- slide-->
+          <div data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1" class="sl-slide bg-3">
+            <div style="background-image: url({% static 'img/main-bg3.jpg' %});" class="sl-slide-inner">
+              <div class="container">
+                <h2>Book your trip with <span class="text-primary">Magic Moments</span></h2>
+                <h1>lorem ipsum dolor sit amit</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End sl-slider-->
+        <!-- slider pagination-->
+        <nav id="nav-dots" class="nav-dots"><span class="nav-dot-current"></span><span></span><span></span></nav>
+        <!-- scroll down btn--><a id="scroll-down" href="#about" class="hidden-xs"></a>
+        <!-- social icons menu-->
+        <div class="social">
+          <div class="wrapper">
+            <ul class="list-unstyled">
+              <li><a href="#" title="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#" title="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#" title="pinterest" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+              <li><a href="#" title="instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            </ul><span>Follow us</span>
+          </div>
+        </div>
+      </div>
+      <!-- End slider-wrapper-->
+    </section>
+    <!-- End Hero Section-->
+    
+    <!-- Details-->
+    <section id="details" class="details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="heading text-center">
+              <p>Contact Us Now For</p>
+              <h5>Book Your Trip</h5>
+            </div><a href="tel:9870988764" class="phone">987 098 8764</a>
+          </div>
+          <div class="col-lg-6">
+            <div class="heading text-center">
+              <p>Check Our Clients'</p>
+              <h5>Rating &amp; Reviews</h5>
+            </div><a href="{% url 'App:rate' %}" class="reviews has-border"><i class="fa fa-angle-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Details-->
+    
+    <!-- About Section-->
+    <section id="about" class="about">
+      <div class="container text-center">
+        <header>
+          <h2>About Magic Moments</h2>
+          <h3>Check our story</h3>
+        </header>
+        <p class="lead">Magic Moments, the world's largest travel platform*, helps 463 million travelers each month** make every trip their best trip. Travelers across the globe use the Tripadvisor site and app to browse more than 859 million reviews and opinions of 8.6 million accommodations, restaurants, experiences, airlines and cruises. Whether planning or on a trip, travelers turn to Magic Moments to compare low prices on hotels, flights and cruises, book popular tours and attractions, as well as reserve tables at great restaurants. Magic Moments, the ultimate travel companion, is available in 49 markets and 28 languages</p>
+      </div>
+    </section>
+    <!-- End About Section-->
+    
+    <!-- Services Section-->
+    <section id="services" class="services">
+      <div class="container text-center">
+        <header>
+          <h2>We provide the following</h2>
+          <h3>Our Specialities</h3>
+        </header>
+        <div class="row">
+          <!-- item-->
+          <div class="col-md-4 service mb-4 mb-lg-0">
+            <div class="icon"><i class="icon-like"></i></div>
+            <div class="text">
+              <h4>Make A Safe Travel Environment</h4>
+              <p>we make your trip safe and happy you can enjoy the adventure without any fear</p>
+            </div>
+          </div>
+          <div class="col-md-4 service mb-4 mb-lg-0">
+            <div class="icon"><i class="icon-map"></i>
+            </div>
+            <div class="text">
+              <h4>Lovely &amp; expert guides</h4>
+              <p>we have the experienced and friendly guides to make your trip more joyful</p>
+            </div>
+          </div>
+          <div class="col-md-4 service mb-4 mb-lg-0">
+            <div class="icon"><i class="icon-coin"></i></div>
+            <div class="text">
+              <h4>Budget friendly</h4>
+              <p>You can go with your budget to your dream destinations now the budget is not a problem for your trip</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services Section-->
+    
+    <!-- Dishes Section-->
+    <section id="dishes" class="dishes">
+      <div class="container text-center">
+        <header>
+          <h2>Explore With Adventure </h2>
+          <h3>JOBS FILL YOUR POCKETS, BUT ADVENTURES FILL YOUR SOUL</h3>
+        </header>
+        <!-- Set up your HTML-->
+        <div class="owl-carousel owl-theme">
+          <!-- item-->
+          <div class="dish">
+            <div class="profile"><img src="{% static 'img/london.jpg' %}" alt="London to London " class="img-fluid d-block mx-auto">
+              <div class="price"><span>$3,719</span></div>
+            </div>
+            <div class="text">
+              <h4>London to London </h4>
+              <p>Touring Europe: Add London and experience Europe's best cities on this affordable tours. See Florence, Amsterdam & more! View itinerary & book today!</p>
+            </div>
+          </div>
+          <!-- item-->
+          <div class="dish">
+            <div class="profile"><img src="{% static 'img/Thailand.jpg' %}" alt="Explore Thailand with Stray Asia" class="img-fluid d-block mx-auto">
+              <div class="price"><span>$750</span></div>
+            </div>
+            <div class="text">
+              <h4>Explore Thailand with Stray Asia</h4>
+              <p>The land of smiles remains one of the top adventure travel destinations for backpackers and with good reason too! It’s got it all: white sand beaches, full moon parties, golden temples, misty mountains, elephants, crazy nightlife, and crazy-delicious (and cheap!) street eats.</p>
+            </div>
+          </div>
+          <!-- item-->
+          <div class="dish">
+            <div class="profile"><img src="{% static 'img/cost.jpg' %}" alt="Costa Rica" class="img-fluid d-block mx-auto">
+              <div class="price"><span>$3125</span></div>
+            </div>
+            <div class="text">
+              <h4>Rainforest adventures in Costa Rica</h4>
+              <p>The best adventures in the world await in Costa Rica, whether it’s pounding the waves, lounging on a beach, or ziplining above cloud forests. Hardcore adventurers can also try extreme hiking through the jungles of Manuel Antonio, cave exploration, and bungee jumping</p>
+            </div>
+          </div>
+          <!-- item-->
+          <div class="dish">
+            <div class="profile"><img src="{% static 'img/africa.jpg' %}" alt="African Safari" class="img-fluid d-block mx-auto">
+              <div class="price"><span>$1417</span></div>
+            </div>
+            <div class="text">
+              <h4>African Safari</h4>
+              <p>From Johannesburg to Johannesburg
+                This Kruger Safari is a fully-inclusive hiking tour in South Africa's Greater Kruger National Park. An ideal budget Kruger Safari for active travellers to get up close to South Africa's wildlife and stay in a private game reserve of Greater Kruger.</p>
+            </div>
+          </div>
+          <!-- item-->
+          <div class="dish">
+            <div class="profile"><img src="{% static 'img/india.jpg' %}" alt="Adventure Tours in India" class="img-fluid d-block mx-auto">
+              <div class="price"><span>$860</span></div>
+            </div>
+            <div class="text">
+              <h4>Adventure Tours in India</h4>
+              <p>Some of its top adventure destinations include exploring the mountains and villages in the Himalayas, the deserts of Rajasthan, the chaotic cities of Mumbai and Delhi, the backwaters of Kerala, and the beaches of Goa.</p>
+            </div>
+          </div>
+          <!-- item-->
+          <div class="dish">
+            <div class="profile"><img src="{% static 'img/ausis.jpg' %}" alt="Awesome Aussie Service Adventure" class="img-fluid d-block mx-auto">
+              <div class="price"><span>$2904</span></div>
+            </div>
+            <div class="text">
+              <h4>Awesome Aussie Adventures</h4>
+              <p>There are so many activities that make Oz one of the world’s top adventure destinations. From the Outback to the Great Barrier Reef, Cape Tribulation to Uluru, there’s so much to explore that you’ll never want to leave.
+                 Adventure seekers can surf, hike in the bush, feed (or eat!) kangaroos, and even snowboard (yes, there’s powder in Straya)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Dishes Section-->
+    
+    <!-- Offers Section-->
+    <section id="offers" class="offers">
+      <div class="container text-center">
+        <header>
+          <h2>Special Offers</h2>
+          <h3>Don't miss our offers</h3>
+        </header>
+        <div class="row">
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <div class="item">
+              <div class="discount"><span>64% <br> off</span></div>
+              <div class="profile"><img src="{% static 'img/newyork.jpg' %}" alt="Dish Name" class="img-responsive"></div>
+              <div class="text">
+                <h4>Newyork tour </h4>
+                <p class="after text-primary text-large">1799$ </p>
+                <p class="before text-muted text-large">5000$ </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <div class="item">
+              <div class="discount"><span>60% <br> off</span></div>
+              <div class="profile"><img src="{% static 'img/italy.webp' %}" alt="Dish Name" class="img-responsive"></div>
+              <div class="text">
+                <h4>Italy Holiday Package</h4>
+                <p class="after text-primary text-large">1599$ </p>
+                <p class="before text-muted text-large">4000$ </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <div class="item">
+              <div class="discount"><span>50% <br> off</span></div>
+              <div class="profile"><img src="{% static 'img/baltic.jpg' %}" alt="Dish Name" class="img-responsive"></div>
+              <div class="text">
+                <h4>Baltics Customized Holidays Tour</h4>
+                <p class="after text-primary text-large">1499$ </p>
+                <p class="before text-muted text-large">3000$ </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Offers Section-->
+    
+    <!-- Menu Section-->
+    <section id="menu" class="menu">
+      <div class="container">
+        <header class="text-center">
+          <h2>Our Packages</h2>
+          <h3>Our most popular tour Packages</h3>
+        </header>
+        <div class="menu">
+          <!-- Tabs Navigatin-->
+          <a href="{% url 'App:packadv' 'ADVENTURE' %}" class="btn btn-primary btn-block">ADVENTURE</a>
+          <a href="{% url 'App:packholy' 'HOLYDAY' %}" class="btn btn-primary btn-block">HOLYDAY</a>
+          <a href="{% url 'App:packdev' 'DEVOTIONAL' %}" class="btn btn-primary btn-block">DEVOTIONAL</a>
+          <a href="{% url 'App:packhoney' 'HONEYMOON' %}" class="btn btn-primary btn-block">HONEYMOON</a>
+          <!-- Tab panes-->
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Menu Section-->
+    <!-- Events Section-->
+    <section id="events" class="events">
+      <div class="container">
+        <header class="text-center">
+          <h2> Our Upcoming Events</h2>
+          <h3>Don’t miss our new year event at Sydney, Australia</h3>
+        </header>
+        <div class="row bg-white align-items-stretch">
+          <!-- Profile Side-->
+          <div class="col-lg-6">
+            <div style="background-image: url({% static 'img/sydeny.jpg' %});" class="profile has-border">
+              <ul class="date list-unstyled list-inline clearfix">
+                <li class="day pull-left">31<sup>th</sup></li>
+                <li class="month pull-left">December <span>2022</span></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Details Side-->
+          <div class="col-lg-6">
+            <div class="details-outer d-flex align-items-center">
+              <div class="details">
+                <h3>New year Celebrate @ Sydney, Australia</h3>
+                <h4 class="text-primary">30 December 2022 | 2 Januvary 2022</h4>
+                <p class="lead"> The celebrations in Sydney are a bouquet of thrillful engagements. Aerial flyovers displaying messages, a brilliant display of fireworks, light shows, and several events at Taronga Zoo catering to the kids make it the best place to celebrate New Year 2022 in the world. You can also get aboard some amazing cruises from Sydney and ring in the new year amidst beautiful waters.
+
+                  Mustn’t miss: Indigenous smoking ceremony, and lighted boat parade
+                  
+                  Where to stay: Hilton Sydney and Song Hotel Sydney</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Events Section-->
+    
+    <!-- Gallery Section-->
+    <section id="gallery" class="gallery">
+      <div class="container text-center">
+        <header>
+          <h2>Our Gallery</h2>
+          <h3>Discover the photo gallery</h3>
+        </header>
+        <div class="gellery">
+          <div class="row">
+            <!-- Item-->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="item"><img src="{% static 'img/bg1.jpg' %}" alt="image"><a href="{% static 'img/bg1.jpg' %}" data-lightbox="image-1" data-title="Image Caption" class="has-border"><span class="icon-search"></span></a></div>
+            </div>
+            <!-- Item-->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="item"><img src="{% static 'img/bg2.jpg' %}" alt="image"><a href="{% static 'img/bg2.jpg' %}" data-lightbox="image-1" data-title="Image Caption" class="has-border"><span class="icon-search"></span></a></div>
+            </div>
+            <!-- Item-->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="item"><img src="{% static 'img/bg3.jpeg' %}" alt="image"><a href="{% static 'img/bg3.jpeg' %}" data-lightbox="image-1" data-title="Image Caption" class="has-border"><span class="icon-search"></span></a></div>
+            </div>
+            <!-- Item-->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="item"><img src="{% static 'img/bg4.jpg' %}" alt="image"><a href="{% static 'img/bg4.jpg' %}" data-lightbox="image-1" data-title="Image Caption" class="has-border"><span class="icon-search"></span></a></div>
+            </div>
+            <!-- Item-->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="item"><img src="{% static 'img/bg5.jpg' %}" alt="image"><a href="{% static 'img/bg5.jpg' %}" data-lightbox="image-1" data-title="Image Caption" class="has-border"><span class="icon-search"></span></a></div>
+            </div>
+            <!-- Item-->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="item"><img src="{% static 'img/bg6.jpg' %}" alt="image"><a href="{% static 'img/bg6.jpg' %}" data-lightbox="image-1" data-title="Image Caption" class="has-border"><span class="icon-search"></span></a></div>
+            </div>
+            <!-- Item-->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="item"><img src="{% static 'img/bg8.jpg' %}" alt="image"><a href="{% static 'img/bg8.jpg' %}" data-lightbox="image-1" data-title="Image Caption" class="has-border"><span class="icon-search"></span></a></div>
+            </div>
+            <!-- Item-->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="item"><img src="{% static 'img/bg7.jpg' %}" alt="image"><a href="{% static 'img/bg7.jpg' %}" data-lightbox="image-1" data-title="Image Caption" class="has-border"><span class="icon-search"></span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Gallery Section-->
+
+    <!-- Contact Section-->
+    <section id="contact" class="contact">
+      <div id="map"></div>
+      <div class="container text-center">
+        <div class="form-holder">
+          <header>
+            <h2>Contact Us</h2>
+            <h3>Feel free to contact us</h3>
+          </header>
+          <form id="contact-form" method="POST" action="{% url 'App:msg' %}">
+            {%  csrf_token %}
+            <div class="row">
+              <label for="user-name" class="col-md-6 unique">Name
+                <input id="user-name" type="text" name="username" required="">
+              </label>
+              <label for="user-email" class="col-md-6 unique">Email
+                <input id="user-email" type="email" name="useremail" required="">
+              </label>
+              <label for="message" class="col-md-12 unique">Your Message
+                <textarea id="message" name="message" required=""></textarea>
+              </label>
+              <div class="col-md-12">
+                <button id="submit" type="submit" class="btn btn-unique">Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div> 
+    </section>
+ 
+    <!-- End Booking Section-->
+    
+    <!-- Footer-->
+    <footer id="mainFooter" class="main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 brief">
+            <div class="header"><img src="{% static 'img/logo2.png' %}" alt="magicmoments" width="100"></div>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          </div>
+          <div class="col-md-4 contact">
+            <div class="header">
+              <h6>Contact</h6>
+            </div>
+            <ul class="contact list-unstyled">
+              <li><span class="icon-map text-primary"></span>Kochi, 23 July st, Kerala,India</li>
+              <li><a href="mailto:magicmoments@Company.com"><span class="icon-phone text-primary"></span>magicmoments@Company.com</a></li>
+              <li><span class="icon-mail text-primary"></span>9465 7675 294</li>
+              <li><span class="icon-printer text-primary"></span>333-999-666</li>
+            </ul>
+          </div>
+          <div class="col-md-4 newsletter">
+            <div class="header">
+              <h6>Newsletter</h6>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmo.</p>
+            <form id="subscribe" action="#" class="clearfix">
+              <input type="email" name="subscribtion-email" placeholder="Enter Your Email Address" class="pull-left">
+              <button type="submit" class="btn-unique has-border pull-left">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <ul class="social list-inline">
+          <li class="list-inline-item"><a href="#" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+          <li class="list-inline-item"><a href="#" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a href="#" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+          <li class="list-inline-item"><a href="#" target="_blank" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
+          <li class="list-inline-item"><a href="#" target="_blank" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+          <li class="list-inline-item"><a href="#" target="_blank" title="Skype"><i class="fa fa-skype"></i></a></li>
+        </ul>
+      </div>
+      <div class="copyrights">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item"><a href="#">Policy Privacy</a></li>
+                <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+                <li class="list-inline-item"><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-md-7">
+              <p class="mb-0">© 2017 Magic Moments</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer-->
+    
+    <!-- scroll top btn-->
+    <div id="scrollTop" class="btn-unique"><i class="fa fa-angle-up"></i></div>
+    <!-- end scroll top btn-->
+    
+    <!-- JavaScript files-->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/popper.js/umd/popper.min.js' %}"> </script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'vendor/jquery.cookie/jquery.cookie.js' %}"> </script>
+    <script src="{% static 'vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/jquery.ba-cond.min.js' %}"></script>
+    <script src="{% static 'js/jquery.slitslider.min.js' %}"></script>
+    <script src="{% static 'vendor/jquery-validation/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'vendor/lightbox2/js/lightbox.min.js' %}"></script>
+    <script src="{% static 'vendor/timepicki/js/timepicki.js' %}"></script>
+    <script src="{% static 'vendor/air-datepicker/js/datepicker.min.js' %}"></script>
+    <script src="{% static 'vendor/air-datepicker/js/i18n/datepicker.en.js' %}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0dSWcBx-VghzhzQB6oCMTgeXMOhCYTvk"></script>
+    <script src="{% static 'js/front.js' %}"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
+    <!---->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+  </body>
+</html>

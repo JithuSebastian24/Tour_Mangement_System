@@ -1,0 +1,106 @@
+/* your styles go here */
+#btn1{
+    color: #fff;
+    background-color:  #7fb401;
+    border-color: #7fb401;
+}
+#btn1:hover{
+    background-color: #638d00;
+    border-color: #638d00;
+}
+h6{
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #7fb401;
+}
+.card{
+    transform: scale(1);
+    transition: 'transform',0.5,linear;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+section h2 {
+    font-size: 4rem;
+    color: #111;
+}
+
+form{
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 1.2em;
+    text-align: left;
+    color: #7e7e7e;
+    display: block;
+    margin-top: 20px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: left;
+}
+#btn{
+    color: #fff;
+    background-color:  #7fb401;
+    border-color: #7fb401;
+    margin-left: 450px;
+    margin-bottom: 30px;
+    
+}
+#btn:hover{
+    background-color: #638d00;
+    border-color: #638d00;
+}
+h2{
+    font-family: 'Brush Script MT', cursive;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+section.booking .form-holder {
+    font-size: 0.8rem;
+    position: relative;
+    background: #fff;
+    padding: 60px 0 0;
+    z-index: 1;
+}
+section.booking .form-holder::before {
+    content: '';
+    width: 80%;
+    height: 2px;
+    background: #7fb401;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    display: block;
+}
+section.booking .form-holder::after {
+    content: '';
+    width: 30vw;
+    max-width: 400px;
+    height: 300px;
+    display: block;
+    background: url(../img/travel-a.png) no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    position: absolute;
+    bottom: -100px;
+    right: -10vw;
+    z-index: -1;
+}
+#con{
+    height: 500px;
+    width: 1100px;
+    border: #111 solid;
+}
+#pc{
+    color: red;
+}
+#btnc{
+    margin-right: 50px;
+}
